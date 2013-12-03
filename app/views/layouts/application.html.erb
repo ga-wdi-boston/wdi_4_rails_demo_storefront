@@ -9,9 +9,11 @@
 <body>
 <ul>
 	<%= render 'shared/login_items' %>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<li><%= link_to 'Products', products_path %></li>
+	<li><%= link_to 'Cart', cart_path %></li>
 </ul>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 <%= yield %>
 
 </body>
